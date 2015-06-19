@@ -6,7 +6,7 @@
         "cityware",
         "view"
     ],
-    "homepage": "https://github.com/cityware/city-services",
+    "homepage": "https://github.com/cityware/city-view",
     "autoload": {
         "psr-4": {
             "Cityware\\View\\": "src/"
