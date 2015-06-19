@@ -32,7 +32,6 @@
         "ext-intl": "Required for most features of Zend\\I18n; included in default builds of PHP",
         "zendframework/zend-View": "Zend\\View component"
     },
-    "minimum-stability": "dev",
     "prefer-stable": true,
     "extra": {
         "branch-alias": {
