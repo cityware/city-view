@@ -23,8 +23,12 @@ class View extends ZendView {
     public static function processViewHelpersInControllers($e) {
         $viewHelperManager = $e->getApplication()->getServiceManager()->get('ViewHelperManager');
 
-        $process = $_SESSION['processHead'];
-        unset($_SESSION['processHead']);
+        if (isset($_SESSION['processHead'])) {
+            $process = $_SESSION['processHead'];
+            unset($_SESSION['processHead']);
+        } else {
+            $process = null;
+        }
         /**
          * Definbe um novo ou adiciona outro Titulo da página
          */
