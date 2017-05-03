@@ -92,7 +92,7 @@ class View extends ZendView {
         /**
          * Define Link de cabeçalho da página
          */
-        if (isset($process['headLink']) and ! empty($this->headLink)) {
+        if (isset($process['headLink']) and ! empty($process['headLink'])) {
             $headLink = $viewHelperManager->get('headLink');
             foreach ($process['headLink'] as $valueHeadLink) {
                 $headLink($valueHeadLink, 'PREPEND')->setSeparator(PHP_EOL);
